@@ -44,6 +44,11 @@ class Sw_Trivia_Widget extends WP_Widget {
         ?>
             <div class="content">
                 <span class="loading">Loading...</span>
+                <?php 
+                    $alderaan = swapi_get_planet('2');
+                    
+                    var_dump($alderaan);
+                ?>
             </div>
         <?php
         

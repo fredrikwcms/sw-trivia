@@ -120,6 +120,12 @@ class Sw_Trivia {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-sw-trivia-widget.php';
 
 		/**
+		 * The class responsible for our widget
+		 * 
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-swapi.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-sw-trivia-admin.php';
