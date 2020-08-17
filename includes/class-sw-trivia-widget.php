@@ -46,8 +46,14 @@ class Sw_Trivia_Widget extends WP_Widget {
                 <span class="loading">Loading...</span>
                 <?php 
                     $alderaan = swapi_get_planet('2');
-                    
-                    var_dump($alderaan);
+                    // $residents = $alderaan->residents;
+
+                    // foreach ($residents as $resident) {
+                    //     // @TODO remove parts of URL we dont need and save it as $character_id
+                    //     $character = swapi_get_character("68");
+                    //     echo $character->name;
+                    // }
+                    echo $alderaan->name;
                 ?>
             </div>
         <?php

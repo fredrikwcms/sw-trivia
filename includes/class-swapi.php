@@ -59,3 +59,11 @@ function swapi_get_planets() {
 function swapi_get_planet($planet_id) {
     return swapi_get('planets', $planet_id);
 }
+
+function swapi_get_characters() {
+    return swapi_get('people');
+}
+
+function swapi_get_character($character_id) {
+    return swapi_get('people', $character_id);
+}
