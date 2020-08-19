@@ -24,7 +24,7 @@ function swapi_get($endpoint, $id = null, $expiry = 3600) {
             $items = swapi_get_url("https://swapi.dev/api/{$endpoint}/{$id}");
         }   else {
             $items = [];
-            $url = "https://swapi.dev/api/{$endpoint}";
+            $url = "https://swapi.dev/api/{$endpoint}/";
             while ($url) {
                 $data = swapi_get_url($url);
                 if (!$data) {

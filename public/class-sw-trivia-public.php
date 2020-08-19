@@ -98,6 +98,19 @@ class Sw_Trivia_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sw-trivia-public.js', array( 'jquery' ), $this->version, false );
 
+		wp_localize_script( $this->plugin_name, 'my_ajax_obj', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+
+	}
+
+	/** 
+	*	Respond to AJAX-query for 'action: get_starwars_films'
+	*/
+
+	function get_starwars_films() {
+		// Call function in swapi.php
+		$films = swapi_get_films();
+		// Send the answer as JSON
+		wp_send_json($films);
 	}
 
 }

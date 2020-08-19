@@ -15,7 +15,7 @@ class Sw_Trivia_Widget extends WP_Widget {
             'sw-trivia', // Base ID
             'SW Trivia Widget',
             [
-                'description' => __('A Widget for fetching data from SWAPI', 'sw-trivia'),
+                'description' => __('A Widget for fetching data from SWAPI with AJAX', 'sw-trivia'),
             ] // Args
             );
     }
@@ -44,17 +44,6 @@ class Sw_Trivia_Widget extends WP_Widget {
         ?>
             <div class="content">
                 <span class="loading">Loading...</span>
-                <?php 
-                    $alderaan = swapi_get_planet('2');
-                    // $residents = $alderaan->residents;
-
-                    // foreach ($residents as $resident) {
-                    //     // @TODO remove parts of URL we dont need and save it as $character_id
-                    //     $character = swapi_get_character("68");
-                    //     echo $character->name;
-                    // }
-                    echo $alderaan->name;
-                ?>
             </div>
         <?php
         

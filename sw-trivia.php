@@ -13,9 +13,9 @@
  * @package           Sw_Trivia
  *
  * @wordpress-plugin
- * Plugin Name:       SW Trivia
+ * Plugin Name:       SW Trivia AJAX
  * Plugin URI:        https://www.data-lord.se
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Get data from SWAPI with AJAX
  * Version:           1.0.0
  * Author:            Fredrik
  * Author URI:        https://www.data-lord.se
